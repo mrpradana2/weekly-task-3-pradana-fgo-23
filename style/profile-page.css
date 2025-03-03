@@ -1,0 +1,691 @@
+:root {
+    --primary-color: #1d4ed8;
+    --secondary-color: rgba(29,78,216, 0.2);
+    --slate-color: #eaeaea ;
+    --dark-color: #4E4B66;
+    --ligth-color: #fff;
+    --disabled-color: #A0A3BD;
+    --input-color: #FCFDFE;
+    --love-nest: #FF69B4;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Mulish", serif;
+    font-weight: 500;
+    background-color: var(--slate-color);
+}
+
+/* header */
+
+header {
+    height: 70px;
+    border-bottom: 1px solid var(--disabled-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--ligth-color);
+    z-index: 9;
+}
+
+header .logo {
+    margin-left: 2rem;
+}
+
+header .account {
+    margin-right: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: al1 100ms ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+header .account a {
+    list-style: none;
+    text-decoration: none;
+}
+
+header .account button {
+    width: max-content;
+    height: 35px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 0.5px solid var(--primary-color);
+    transition: all 100ms ease-in;
+    cursor: pointer;
+}
+
+header .account #signin-button {
+    background-color: var(--ligth-color);
+    color: var(--primary-color);
+}
+
+header .account #signin-button:active {
+    transform: scale(0.95);
+}
+
+header .account #signup-button {
+    background-color: var(--primary-color);
+    color: var(--ligth-color);
+}
+
+header .account #signup-button:active {
+    transform: scale(0.95);
+}
+
+header .hamburger {
+    display: none;
+}
+
+/* end header */
+
+/* main */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    'profile bar'
+    'profile section';
+    gap: 1.5rem;
+    padding: 1.5rem;
+    position: relative;
+}
+
+main section {
+    padding: 1.5rem;
+    background-color: var(--ligth-color);
+    border-radius: 10px;
+}
+
+main section#profile {
+    grid-area: profile;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main section#profile > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section#profile > div:nth-child(1) > div {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+main section#profile > div:nth-child(1) > div > span {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--dark-color);
+}
+
+main section#profile > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#profile > div:nth-child(2) > div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+main section#profile > div:nth-child(2) > div > img {
+    width: 250px;
+    transform: translateX(-40px);
+}
+
+main section#profile > div:nth-child(2) > h1 {
+    text-align: center;
+}
+
+main section#profile > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main section#profile > div:nth-child(3) p {
+    color: var(--disabled-color);
+}
+
+main section#profile > div:nth-child(3) > div:nth-child(2) {
+    height: 140px;
+    background-color: #1d4ed8;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+main section#profile > div:nth-child(3) > div:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    opacity: 0.3;
+    background-color: var(--ligth-color);
+    transform: translate(40px, -60px);
+}
+
+main section#profile > div:nth-child(3) > div:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    opacity: 0.3;
+    background-color: var(--ligth-color);
+    transform: translate(60px, -30px);
+}
+
+main section#profile > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section#profile > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > p {
+    font-size: 1.5rem;
+    color: var(--ligth-color);
+    font-weight: 700;
+}
+
+main section#profile > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > img {
+    transform: translateX(10px);
+}
+
+main section#profile > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
+    display: flex;
+    gap: 0.4rem;
+    align-items: end;
+}
+
+main section#profile > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > h1 {
+    color: var(--ligth-color);
+}
+
+main section#profile > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > p {
+    color: var(--ligth-color);
+    font-weight: 400;
+}
+
+main section#profile > div:nth-child(3) > div:nth-child(4) > div {
+    height: 20px;
+    box-shadow: inset 1px 1px 7px 6px var(--slate-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main section#profile > div:nth-child(3) > div:nth-child(4) > div > span {
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+main section#bar {
+    grid-area: bar;
+}
+
+main section#bar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+main section#bar ul li {
+    list-style: none;
+}
+
+main section#bar ul li a {
+    text-decoration: none;
+    color: var(--disabled-color);
+}
+
+main section#bar ul li a.active {
+    color: var(--dark-color);
+    position: relative;
+}
+
+main section#bar ul li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid var(--primary-color);
+    width: 100%;
+    transform: translateY(20px);
+}
+
+main section#other-section {
+    grid-area: section;
+    padding: 0;
+    background-color: var(--slate-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+main section#other-section > div {
+    padding: 1.5rem;
+    background-color: var(--ligth-color);
+    border-radius: 10px;
+}
+
+main section#other-section .layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main section#other-section .layout > h1 {
+    font-size: 1rem;
+    border-bottom: 2px solid var(--slate-color);
+    padding-bottom: 10px;
+}
+
+main section#other-section .layout > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+main section#other-section .layout > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+main section#other-section .layout > div > div > label {
+    font-size: 0.8rem;
+    color: var(--disabled-color);
+}
+
+main section#other-section .layout > div > div > input {
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid var(--disabled-color);
+    padding: 0 1rem;
+}
+
+main section#other-section .layout > div > div > input::placeholder {
+    color: var(--disabled-color);
+}
+
+main section#other-section .layout > div > div:nth-child(4) {
+    position: relative;
+}
+
+main section#other-section .layout > div > div:nth-child(4) > input {
+    padding: 0 1rem 0 3.3rem;
+}
+
+main section#other-section .layout > div > div:nth-child(4)::after {
+    content: '+62';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 35px;
+    height: 25px;
+    color: var(--disabled-color);
+    border-right: 2px solid var(--disabled-color);
+    z-index: 99;
+}
+
+main section#other-section .layout > div > div > input:focus {
+    border: none;
+    outline: 2px solid var(--primary-color);
+}
+
+main section#other-section .new-password.layout > div > div:nth-child(1) > input,
+main section#other-section .new-password.layout > div > div:nth-child(2) > input {
+    padding-right: 2.5rem;
+}
+
+main section#other-section .new-password.layout > div > div:nth-child(1),
+main section#other-section .new-password.layout > div > div:nth-child(2) {
+    position: relative;
+}
+
+main section#other-section .new-password.layout > div > div:nth-child(1)::after,
+main section#other-section .new-password.layout > div > div:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url('../assets/icons/eye.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section#other-section .button {
+    padding: 0;
+    background-color: transparent;
+}
+
+main section#other-section .button button {
+    width: 250px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: var(--ligth-color);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+main section#other-section .button button:active {
+    transform: scale(0.97);
+}
+
+
+/* end main */
+
+
+
+/* footer */
+
+footer {
+    display: grid;
+    grid-template-areas: 
+    'tagline explore sponsor follow'
+    'copy-rigth copy-rigth copy-rigth copy-rigth';
+    padding: 3rem 0;
+    column-gap: 2rem;
+    background-color: var(--ligth-color);
+}
+
+footer > div:nth-child(1) {
+    width: 300px;
+    grid-area: tagline;
+    margin-left: 4rem;
+}
+
+footer > div:nth-child(1) p {
+    color: var(--disabled-color);
+}
+
+footer > div:nth-child(2) {
+    grid-area: explore;
+}
+
+footer > div:nth-child(3) > div {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: start;
+}
+
+footer > div:nth-child(2) a {
+    display: block;
+    text-decoration: none;
+    color: var(--disabled-color);
+    transition: all 100ms ease-in-out;
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+footer > div:nth-child(2) a:hover {
+    color: var(--primary-color);
+}
+
+footer > div:nth-child(3) {
+    grid-area: sponsor;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: start;
+}
+
+footer > div:nth-child(3) img {
+    height: 1.5rem;
+}
+
+footer > div:nth-child(4) {
+    grid-area: follow;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+footer > div:nth-child(4) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer > div:nth-child(2) > h6,
+footer > div:nth-child(3) > h6,
+footer > div:nth-child(4) > h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+footer > div:nth-child(4) > div > a {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    color: var(--disabled-color);
+    transition: all 100ms ease-in-out;
+}
+
+footer > div:nth-child(4) > div > a:hover {
+    color: var(--primary-color);
+}
+
+footer > div:nth-child(4) img {
+    width: 25px;
+}
+
+footer > div:nth-child(4) p {
+    font-size: 0.8rem;
+}
+
+footer > div:nth-child(5) {
+    grid-area: copy-rigth;
+    text-align: center;
+    color: var(--disabled-color);
+    margin-top: 1rem;
+}  
+
+/* end footer */
+
+
+/* responsive lg */
+
+@media screen and (max-width: 1024px) {
+    /* footer */
+
+    footer {
+        grid-template-areas: 
+        'tagline'
+        'explore'
+        'sponsor'
+        'follow'
+        'copy-rigth';
+        row-gap: 2rem;
+    }
+
+    footer > div:nth-child(2),
+    footer > div:nth-child(3),
+    footer > div:nth-child(4),
+    footer > div:nth-child(5) {
+        margin-left: 4rem;
+    }
+
+    footer > div:nth-child(5) {
+        text-align: left;
+    }
+
+    footer > div:nth-child(2) > ul {
+        display: flex;
+        column-gap: 2rem;
+        row-gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    footer > div:nth-child(3) > div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer > div:nth-child(4) > div {
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+    }
+
+    footer > div:nth-child(4) p {
+        display: none;
+    }
+
+    footer > div:nth-child(5) {
+        margin-top: 2rem;
+    }
+    /* end footer */
+}
+
+/* end responsive lg */
+
+/* responsive md */
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 7fr;
+        grid-template-areas: 
+        'bar'
+        'profile'
+        'section';
+    }
+
+    main section#other-section .layout > div {
+        grid-template-columns: 1fr;
+    }
+
+    main form {
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        padding-bottom: 2rem;
+    }
+
+    main form.active {
+        display: block;
+    }
+
+    main::after {
+        content: '';
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--dark-color);
+        opacity: 0.5;
+    }
+
+    main.active::after {
+        display: block;
+    }
+
+    main section#other-section .button {
+        padding: 1.5rem;
+    }
+    
+    main form section#other-section {
+        background-color: var(--ligth-color);
+        padding-bottom: 2rem;
+    }
+    /* header */
+    header .hamburger {
+        display: block;
+        width: max-content;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        flex-direction: column;
+        row-gap: 5px;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+
+    header .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: var(--dark-color);
+    }
+
+    header .hamburger .bar:nth-child(2) {
+        width: 18px;
+    }
+
+    header .account {
+        display: none;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    /* end header */
+}    
+/* end responsive md */
