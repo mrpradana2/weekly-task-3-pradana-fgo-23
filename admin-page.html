@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page - Tickitz</title>
+    <link rel="stylesheet" href="style/admin-page.css">
+    <!-- icon -->
+    <link rel="shortcut icon" href="./assets/img/logo/logo-Tickitz.svg" type="image/x-icon">
+    <!-- font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <img src="./assets/img/logo/logo-Tickitz.svg" alt="logo-tickitz">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./index2.html">Movie</a>
+                </li>
+                <li>
+                    <a href="./order-page.html">Buy Ticket</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="account">
+            <a href="./log-in.html">
+                <button type="button" id="signin-button">SignIn</button>
+            </a>
+            <a href="./sign-up.html">
+                <button type="button" id="signup-button">Sign Up</button>
+            </a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- main -->
+
+    <main>
+        <div class="container">
+            <div class="title-table">
+                <h1>List Movie</h1>
+            </div>
+            <div class="date">
+                <input type="date" name="date" id="date" placeholder="November 2023">
+            </div>
+            <div class="button-add">
+                <button type="button">
+                    Add Movies
+                </button>
+            </div>
+            <div id="table">
+                <table>
+                    <thead>
+                        <th scope="col">No</th>
+                        <th scope="col">Thumbnail</th>
+                        <th scope="col">Movie Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Released Date</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Action</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="./assets/img/tumbnail/order-page.png" alt="#">
+                            </td>
+                            <td>Spiderman HomeComing</td>
+                            <td>Action, Adventure</td>
+                            <td>07/05/2023</td>
+                            <td>2 Hours 15 Minute</td>
+                            <td class="action">
+                                <button type="button">
+                                    <img src="./assets/icons/eye-white.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Edit.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Delete.svg  " alt="icon">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="./assets/img/tumbnail/card-img-1.png" alt="#">
+                            </td>
+                            <td>Avengers End Game</td>
+                            <td>Sci-fi, Adventure</td>
+                            <td>10/06/2023</td>
+                            <td>2 Hours 15 Minute</td>
+                            <td class="action">
+                                <button type="button">
+                                    <img src="./assets/icons/eye-white.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Edit.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Delete.svg  " alt="icon">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <img src="./assets/img/tumbnail/order-page.png" alt="#">
+                            </td>
+                            <td>Spiderman HomeComing</td>
+                            <td>Action, Adventure</td>
+                            <td>07/05/2023</td>
+                            <td>2 Hours 15 Minute</td>
+                            <td class="action">
+                                <button type="button">
+                                    <img src="./assets/icons/eye-white.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Edit.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Delete.svg  " alt="icon">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <img src="./assets/img/tumbnail/card-img-1.png" alt="#">
+                            </td>
+                            <td>Avengers End Game</td>
+                            <td>Sci-fi, Adventure</td>
+                            <td>10/06/2023</td>
+                            <td>2 Hours 15 Minute</td>
+                            <td class="action">
+                                <button type="button">
+                                    <img src="./assets/icons/eye-white.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Edit.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Delete.svg  " alt="icon">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <img src="./assets/img/tumbnail/order-page.png" alt="#">
+                            </td>
+                            <td>Spiderman HomeComing</td>
+                            <td>Action, Adventure</td>
+                            <td>07/05/2023</td>
+                            <td>2 Hours 15 Minute</td>
+                            <td class="action">
+                                <button type="button">
+                                    <img src="./assets/icons/eye-white.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Edit.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Delete.svg  " alt="icon">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>
+                                <img src="./assets/img/tumbnail/card-img-1.png" alt="#">
+                            </td>
+                            <td>Avengers End Game</td>
+                            <td>Sci-fi, Adventure</td>
+                            <td>10/06/2023</td>
+                            <td>2 Hours 15 Minute</td>
+                            <td class="action">
+                                <button type="button">
+                                    <img src="./assets/icons/eye-white.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Edit.svg" alt="icon">
+                                </button>
+                                <button type="button">
+                                    <img src="./assets/icons/Delete.svg  " alt="icon">
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="slicer">
+                <div>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- end main -->
+
+    <!-- footer -->
+    <footer>
+        <div>
+            <img src="./assets/img/logo/logo-Tickitz.svg" alt="logo">
+            <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+        </div>
+        <div>
+            <h6>Explore</h6>
+            <ul>
+                <a href="#">
+                    <li>Cinemas</li>
+                </a>
+                <a href="./index2.html">
+                    <li>Movies List</li>
+                </a>
+                <a href="./ticket-result.html">
+                    <li>My Ticket</li>
+                </a>
+                <a href="#">
+                    <li>Notification</li>
+                </a>
+            </ul>
+        </div>
+        <div>
+            <h6>Our Sponsor</h6>
+            <div>
+                <img src="./assets/img/logo-sponsor/ebv.id 2.svg" alt="logo-sponsor">
+                <img src="./assets/img/logo-sponsor/CineOne21 2.svg" alt="logo-sponsor">
+                <img src="./assets/img/logo-sponsor/hiflix 2.svg" alt="logo-sponsor">
+            </div>
+        </div>
+        <div>
+            <h6>Follow us</h6>
+            <div>
+                <a href="#">
+                    <img src="./assets/icons/social-media/eva_facebook-outline.svg" alt="social-media">
+                    <p>Tickitz Cinema id</p>
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/social-media/bx_bxl-instagram.svg" alt="social-media">
+                    <p>tickitz.id</p>
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/social-media/eva_twitter-outline.svg" alt="social-media">
+                    <p>tickitz.id</p>
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/social-media/feather_youtube.svg" alt="social-media">
+                    <p>Tickitz Cinema id</p>
+                </a>
+            </div>
+        </div>
+        <div>&copy; 2020 Tickitz. All Rights Reserved</div>
+    </footer>
+    <!-- end footer -->
+</body>
+</html>
