@@ -308,6 +308,20 @@ main section:nth-child(2) .payment-methode > div > div > label img {
     height: 25px;
 }
 
+main section:nth-child(2) form > div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+}
+
+main section:nth-child(2) form > div:nth-child(3) a#submit{
+    display: block;
+    width: 100%;
+}
+
+main section:nth-child(2) form > div:nth-child(3) a#submit button {
+    width: 100%;
+}
+
 main section:nth-child(2) form button:hover {
     filter: brightness(0.9);
 }
