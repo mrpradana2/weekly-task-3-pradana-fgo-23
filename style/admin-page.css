@@ -65,16 +65,55 @@ header nav ul li a:hover {
 header .account a {
     list-style: none;
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
 
-header .account button {
-    width: max-content;
-    height: 35px;
-    padding: 3px 10px;
-    border-radius: 5px;
-    border: 0.5px solid var(--primary-color);
-    transition: all 100ms ease-in;
-    cursor: pointer;
+header .account {
+    width: 15%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .account div:nth-child(1) {
+    position: relative;
+}
+
+header .account div:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(calc(-50% + 1px));
+    width: 10px;
+    height: 10px;
+    background-image: url('../assets/icons/Forward.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .account div:nth-child(1) a {
+    text-decoration: none;
+    color: var(--dark-color);
+    padding: 0 1rem;
+}
+
+header .account div:nth-child(3) {
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+header .account div:nth-child(3) img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 header .account #signin-button {
