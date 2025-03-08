@@ -1,0 +1,368 @@
+:root {
+  --primary-color: #1d4ed8;
+  --secondary-color: rgba(29, 78, 216, 0.2);
+  --slate-color: #eaeaea;
+  --dark-color: #4e4b66;
+  --ligth-color: #fff;
+  --disabled-color: #a0a3bd;
+  --input-color: #fcfdfe;
+  --love-nest: #ff69b4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Mulish", serif;
+  font-weight: 500;
+  background-color: var(--slate-color);
+}
+
+/* header */
+
+header {
+  height: 70px;
+  border-bottom: 1px solid var(--disabled-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--ligth-color);
+  z-index: 9;
+}
+
+header .logo {
+  margin-left: 1.5rem;
+}
+
+header .account {
+  margin-right: 1.5rem;
+}
+
+header .account a {
+  list-style: none;
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: al1 100ms ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+header .account button {
+  width: max-content;
+  height: 35px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: 0.5px solid var(--primary-color);
+  transition: all 100ms ease-in;
+  cursor: pointer;
+}
+
+header .account #signin-button {
+  background-color: var(--ligth-color);
+  color: var(--primary-color);
+}
+
+header .account #signin-button:active {
+  transform: scale(0.95);
+}
+
+header .account #signup-button {
+  background-color: var(--primary-color);
+  color: var(--ligth-color);
+}
+
+header .account #signup-button:active {
+  transform: scale(0.95);
+}
+
+header .hamburger {
+  display: none;
+}
+
+header .hamburger .bar:nth-child(2) {
+  width: 18px;
+}
+
+header .hamburger .bar {
+  transition: all 100ms ease-in-out;
+}
+
+header .hamburger .bar.active:nth-child(1) {
+  transform: translateY(8px) rotate(-45deg);
+}
+
+header .hamburger .bar.active:nth-child(2) {
+  width: 0;
+}
+
+header .hamburger .bar.active:nth-child(3) {
+  transform: translateY(-8px) rotate(45deg);
+}
+
+/* end header */
+
+/* footer */
+
+footer {
+  display: grid;
+  grid-template-areas:
+    "tagline explore sponsor follow"
+    "copy-rigth copy-rigth copy-rigth copy-rigth";
+  padding: 3rem 0;
+  column-gap: 2rem;
+  background-color: var(--ligth-color);
+}
+
+footer > div:nth-child(1) {
+  width: 300px;
+  grid-area: tagline;
+  margin-left: 4rem;
+}
+
+footer > div:nth-child(1) p {
+  color: var(--disabled-color);
+}
+
+footer > div:nth-child(2) {
+  grid-area: explore;
+}
+
+footer > div:nth-child(3) > div {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: start;
+}
+
+footer > div:nth-child(2) a {
+  display: block;
+  text-decoration: none;
+  color: var(--disabled-color);
+  transition: all 100ms ease-in-out;
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+footer > div:nth-child(2) a:hover {
+  color: var(--primary-color);
+}
+
+footer > div:nth-child(3) {
+  grid-area: sponsor;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: start;
+}
+
+footer > div:nth-child(3) img {
+  height: 1.5rem;
+}
+
+footer > div:nth-child(4) {
+  grid-area: follow;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+footer > div:nth-child(4) > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer > div:nth-child(2) > h6,
+footer > div:nth-child(3) > h6,
+footer > div:nth-child(4) > h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer > div:nth-child(4) > div > a {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--disabled-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer > div:nth-child(4) > div > a:hover {
+  color: var(--primary-color);
+}
+
+footer > div:nth-child(4) img {
+  width: 25px;
+}
+
+footer > div:nth-child(4) p {
+  font-size: 0.8rem;
+}
+
+footer > div:nth-child(5) {
+  grid-area: copy-rigth;
+  text-align: center;
+  color: var(--disabled-color);
+  margin-top: 1rem;
+}
+
+/* end footer */
+
+/* responsive lg */
+
+@media screen and (max-width: 1024px) {
+  /* footer */
+
+  footer {
+    grid-template-areas:
+      "tagline"
+      "explore"
+      "sponsor"
+      "follow"
+      "copy-rigth";
+    row-gap: 2rem;
+  }
+
+  footer > div:nth-child(2),
+  footer > div:nth-child(3),
+  footer > div:nth-child(4),
+  footer > div:nth-child(5) {
+    margin-left: 4rem;
+  }
+
+  footer > div:nth-child(5) {
+    text-align: left;
+  }
+
+  footer > div:nth-child(2) > ul {
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  footer > div:nth-child(3) > div {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  footer > div:nth-child(4) > div {
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+  }
+
+  footer > div:nth-child(4) p {
+    display: none;
+  }
+
+  footer > div:nth-child(5) {
+    margin-top: 2rem;
+  }
+  /* end footer */
+}
+
+/* end responsive lg */
+
+/* responsive md */
+
+@media screen and (max-width: 768px) {
+  /* header */
+  header .hamburger {
+    display: block;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  header .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--dark-color);
+  }
+
+  header .account {
+    display: none;
+  }
+
+  header {
+    position: relative;
+  }
+
+  header nav {
+    background-color: #a0a3bd;
+    position: absolute;
+    top: 69px;
+    left: 0;
+    right: 0;
+    /* transform: translateY(calc(-100% + -69px)); */
+    transform: translateX(-100%);
+    transition: all 200ms ease-in-out;
+  }
+
+  header nav.active {
+    transform: translateX(0);
+  }
+
+  header nav > ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  header nav > ul > li {
+    background-color: var(--ligth-color);
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+  }
+
+  header nav > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  header nav > ul > li > a.active {
+    color: var(--primary-color);
+  }
+
+  /* end header */
+}
+/* end responsive md */
