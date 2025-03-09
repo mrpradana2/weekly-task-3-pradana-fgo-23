@@ -21,86 +21,6 @@ body {
   background-color: var(--slate-color);
 }
 
-/* header */
-
-header {
-  height: 70px;
-  border-bottom: 1px solid var(--disabled-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  background-color: var(--ligth-color);
-  z-index: 9;
-}
-
-header .logo {
-  margin-left: 2rem;
-}
-
-header .account {
-  margin-right: 2rem;
-}
-
-header .account a {
-  list-style: none;
-  text-decoration: none;
-}
-
-header nav ul {
-  display: flex;
-  gap: 2rem;
-}
-
-header nav ul li {
-  list-style: none;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: var(--dark-color);
-  transition: al1 100ms ease-in-out;
-}
-
-header nav ul li a:hover {
-  color: var(--primary-color);
-}
-
-header .account button {
-  width: max-content;
-  height: 35px;
-  padding: 3px 10px;
-  border-radius: 5px;
-  border: 0.5px solid var(--primary-color);
-  transition: all 100ms ease-in;
-  cursor: pointer;
-}
-
-header .account #signin-button {
-  background-color: var(--ligth-color);
-  color: var(--primary-color);
-}
-
-header .account #signin-button:active {
-  transform: scale(0.95);
-}
-
-header .account #signup-button {
-  background-color: var(--primary-color);
-  color: var(--ligth-color);
-}
-
-header .account #signup-button:active {
-  transform: scale(0.95);
-}
-
-header .hamburger {
-  display: none;
-}
-
-/* end header */
-
 /* main */
 
 /* section setup */
@@ -639,42 +559,6 @@ footer > div:nth-child(5) {
 /* responsive md */
 
 @media screen and (max-width: 768px) {
-  /* header */
-  header .hamburger {
-    display: block;
-    width: max-content;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    flex-direction: column;
-    row-gap: 5px;
-    margin-right: 2rem;
-    cursor: pointer;
-  }
-
-  header .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    border-radius: 10px;
-    background-color: var(--dark-color);
-  }
-
-  header .hamburger .bar:nth-child(2) {
-    width: 18px;
-  }
-
-  header .account {
-    display: none;
-  }
-
-  header nav {
-    display: none;
-  }
-
-  /* end header */
-
   /* main */
 
   main section:nth-child(2) {
