@@ -454,6 +454,20 @@ footer > div:nth-child(5) {
     row-gap: 2rem;
   }
 
+  main section:nth-child(1) {
+    padding: 4rem 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main section:nth-child(1) img {
+    width: 200px;
+  }
+
+  main section:nth-child(1) h1 {
+    font-size: 2rem;
+  }
+
   main section:nth-child(1) h1,
   main section:nth-child(1) p {
     text-align: center;
