@@ -1,171 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Page - Tickitz</title>
-    <link rel="stylesheet" href="style/add-new-movie.css">
+    <link rel="stylesheet" href="style/add-new-movie.css" />
     <!-- icon -->
-    <link rel="shortcut icon" href="./assets/img/logo/logo-Tickitz.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo/logo-Tickitz.svg"
+      type="image/x-icon"
+    />
     <!-- font import -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- header -->
     <header>
-        <div class="logo">
-            <img src="./assets/img/logo/logo-Tickitz.svg" alt="logo-tickitz">
+      <div class="logo">
+        <img src="./assets/img/logo/logo-Tickitz.svg" alt="logo-tickitz" />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./profile-page.html">Dashboard</a>
+          </li>
+          <li>
+            <a href="./index2.html">Movie</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="account">
+        <div>
+          <a href="#">Location</a>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./profile-page.html">Dashboard</a>
-                </li>
-                <li>
-                    <a href="./index2.html">Movie</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="account">
-            <div>
-                <a href="#">Location</a>
-            </div>
-            <div>
-                <img src="./assets/icons/Search.svg" alt="icon-search">
-            </div>
-            <div>
-                <img src="./assets/img/tumbnail/photo-profile.png" alt="photo-profile">
-            </div>
+        <div>
+          <img src="./assets/icons/Search.svg" alt="icon-search" />
         </div>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div>
+          <img
+            src="./assets/img/tumbnail/photo-profile.png"
+            alt="photo-profile"
+          />
         </div>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </header>
     <!-- end header -->
 
     <!-- main -->
 
     <main>
-        <form>
-            <div class="container">
-                <h1>Add New Movie</h1>
-                <div class="box-input">
-                    <label for="upload-img">Upload Image</label>
-                    <input type="file" name="upload-img" id="upload-img">
-                    <button type="button" onclick="document.getElementById('upload-img').click()">Upload File</button>
-                </div>
-                <div class="box-input">
-                    <label for="movie-name">Movie Name</label>
-                    <input type="text" name="movie-name" id="movie-name" placeholder="Enter Movie Name">
-                </div>
-                <div class="box-input">
-                    <label for="category">Category</label>
-                    <input type="text" name="category" id="category" placeholder="Enter Category">
-                </div>
-                <div class="box-input-multiple">
-                    <div>
-                        <label for="release-date">Release date</label>
-                        <input type="date" name="release-date" id="release-date" placeholder="Enter Release">
-                    </div>
-                    <div>
-                        <label for="category">Duration (hour / minute)</label>
-                        <div>
-                            <input type="number" name="hout" id="hout" placeholder="Enter Hour">
-                            <input type="number" name="minute" id="minute" placeholder="Enter Minute">
-                        </div>
-                    </div>
-                </div>
-                <div class="box-input">
-                    <label for="director-name">Director Name</label>
-                    <input type="text" name="director-name" id="director-name" placeholder="Enter Director Name">
-                </div>
-                <div class="box-input">
-                    <label for="cast">Cast</label>
-                    <input type="text" name="cast" id="cast" placeholder="Enter Cast">
-                </div>
-                <div class="box-input">
-                    <label for="synopsis">Synopsis</label>
-                    <textarea name="synopsis" id="synopsis" placeholder="Enter Synopsis" rows="5"></textarea>
-                </div>
-                <div class="box-input">
-                    <label for="add-location">Add Location</label>
-                    <input type="text" name="add-location" id="add-location" placeholder="Enter Location">
-                </div>
-                <div class="box-input">
-                    <label for="date-and-time">Set Date & Time</label>
-                    <input type="date" name="date-and-time" id="date-and-time">
-                    <div class="add-time">
-                        <div></div>
-                        <p>08:30am</p>
-                        <p>10:30pm</p>
-                    </div>
-                </div>
-                <button type="submit">Save Movie</button>
+      <form>
+        <div class="container">
+          <h1>Add New Movie</h1>
+          <div class="box-input">
+            <label for="upload-img">Upload Image</label>
+            <input type="file" name="upload-img" id="upload-img" />
+            <button
+              type="button"
+              onclick="document.getElementById('upload-img').click()"
+            >
+              Upload File
+            </button>
+          </div>
+          <div class="box-input">
+            <label for="movie-name">Movie Name</label>
+            <input
+              type="text"
+              name="movie-name"
+              id="movie-name"
+              placeholder="Enter Movie Name"
+            />
+          </div>
+          <div class="box-input">
+            <label for="category">Category</label>
+            <input
+              type="text"
+              name="category"
+              id="category"
+              placeholder="Enter Category"
+            />
+          </div>
+          <div class="box-input-multiple">
+            <div>
+              <label for="release-date">Release date</label>
+              <input
+                type="date"
+                name="release-date"
+                id="release-date"
+                placeholder="Enter Release"
+              />
             </div>
-        </form>
+            <div>
+              <label for="category">Duration (hour / minute)</label>
+              <div>
+                <input
+                  type="number"
+                  name="hout"
+                  id="hout"
+                  placeholder="Enter Hour"
+                />
+                <input
+                  type="number"
+                  name="minute"
+                  id="minute"
+                  placeholder="Enter Minute"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="box-input">
+            <label for="director-name">Director Name</label>
+            <input
+              type="text"
+              name="director-name"
+              id="director-name"
+              placeholder="Enter Director Name"
+            />
+          </div>
+          <div class="box-input">
+            <label for="cast">Cast</label>
+            <input type="text" name="cast" id="cast" placeholder="Enter Cast" />
+          </div>
+          <div class="box-input">
+            <label for="synopsis">Synopsis</label>
+            <textarea
+              name="synopsis"
+              id="synopsis"
+              placeholder="Enter Synopsis"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="box-input">
+            <label for="add-location">Add Location</label>
+            <input
+              type="text"
+              name="add-location"
+              id="add-location"
+              placeholder="Enter Location"
+            />
+          </div>
+          <div class="box-input">
+            <label for="date-and-time">Set Date & Time</label>
+            <input type="date" name="date-and-time" id="date-and-time" />
+            <div class="add-time">
+              <div></div>
+              <p>08:30am</p>
+              <p>10:30pm</p>
+            </div>
+          </div>
+          <button type="submit">Save Movie</button>
+        </div>
+      </form>
     </main>
 
     <!-- end main -->
 
     <!-- footer -->
     <footer>
+      <div>
+        <img src="./assets/img/logo/logo-Tickitz.svg" alt="logo" />
+        <p>
+          Stop waiting in line. Buy tickets conveniently, watch movies quietly.
+        </p>
+      </div>
+      <div>
+        <h6>Explore</h6>
+        <ul>
+          <a href="#">
+            <li>Cinemas</li>
+          </a>
+          <a href="./index2.html">
+            <li>Movies List</li>
+          </a>
+          <a href="./ticket-result.html">
+            <li>My Ticket</li>
+          </a>
+          <a href="#">
+            <li>Notification</li>
+          </a>
+        </ul>
+      </div>
+      <div>
+        <h6>Our Sponsor</h6>
         <div>
-            <img src="./assets/img/logo/logo-Tickitz.svg" alt="logo">
-            <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+          <img
+            src="./assets/img/logo-sponsor/ebv.id 2.svg"
+            alt="logo-sponsor"
+          />
+          <img
+            src="./assets/img/logo-sponsor/CineOne21 2.svg"
+            alt="logo-sponsor"
+          />
+          <img
+            src="./assets/img/logo-sponsor/hiflix 2.svg"
+            alt="logo-sponsor"
+          />
         </div>
+      </div>
+      <div>
+        <h6>Follow us</h6>
         <div>
-            <h6>Explore</h6>
-            <ul>
-                <a href="#">
-                    <li>Cinemas</li>
-                </a>
-                <a href="./index2.html">
-                    <li>Movies List</li>
-                </a>
-                <a href="./ticket-result.html">
-                    <li>My Ticket</li>
-                </a>
-                <a href="#">
-                    <li>Notification</li>
-                </a>
-            </ul>
+          <a href="#">
+            <img
+              src="./assets/icons/social-media/eva_facebook-outline.svg"
+              alt="social-media"
+            />
+            <p>Tickitz Cinema id</p>
+          </a>
+          <a href="#">
+            <img
+              src="./assets/icons/social-media/bx_bxl-instagram.svg"
+              alt="social-media"
+            />
+            <p>tickitz.id</p>
+          </a>
+          <a href="#">
+            <img
+              src="./assets/icons/social-media/eva_twitter-outline.svg"
+              alt="social-media"
+            />
+            <p>tickitz.id</p>
+          </a>
+          <a href="#">
+            <img
+              src="./assets/icons/social-media/feather_youtube.svg"
+              alt="social-media"
+            />
+            <p>Tickitz Cinema id</p>
+          </a>
         </div>
-        <div>
-            <h6>Our Sponsor</h6>
-            <div>
-                <img src="./assets/img/logo-sponsor/ebv.id 2.svg" alt="logo-sponsor">
-                <img src="./assets/img/logo-sponsor/CineOne21 2.svg" alt="logo-sponsor">
-                <img src="./assets/img/logo-sponsor/hiflix 2.svg" alt="logo-sponsor">
-            </div>
-        </div>
-        <div>
-            <h6>Follow us</h6>
-            <div>
-                <a href="#">
-                    <img src="./assets/icons/social-media/eva_facebook-outline.svg" alt="social-media">
-                    <p>Tickitz Cinema id</p>
-                </a>
-                <a href="#">
-                    <img src="./assets/icons/social-media/bx_bxl-instagram.svg" alt="social-media">
-                    <p>tickitz.id</p>
-                </a>
-                <a href="#">
-                    <img src="./assets/icons/social-media/eva_twitter-outline.svg" alt="social-media">
-                    <p>tickitz.id</p>
-                </a>
-                <a href="#">
-                    <img src="./assets/icons/social-media/feather_youtube.svg" alt="social-media">
-                    <p>Tickitz Cinema id</p>
-                </a>
-            </div>
-        </div>
-        <div>&copy; 2020 Tickitz. All Rights Reserved</div>
+      </div>
+      <div>&copy; 2020 Tickitz. All Rights Reserved</div>
     </footer>
     <!-- end footer -->
-</body>
+  </body>
 </html>
