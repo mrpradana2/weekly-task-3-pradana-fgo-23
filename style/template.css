@@ -18,7 +18,7 @@
 body {
   font-family: "Mulish", serif;
   font-weight: 500;
-  background-color: var(--slate-color);
+  /* background-color: var(--slate-color); */
 }
 
 /* header */
