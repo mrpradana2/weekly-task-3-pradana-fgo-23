@@ -329,9 +329,9 @@ footer > div:nth-child(5) {
     top: 69px;
     left: 0;
     right: 0;
-    /* transform: translateY(calc(-100% + -69px)); */
     transform: translateX(-100%);
     transition: all 200ms ease-in-out;
+    box-shadow: 0 1px 3px var(--disabled-color);
   }
 
   header nav.active {
