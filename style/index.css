@@ -654,6 +654,15 @@ footer > div:nth-child(5) {
 .box-card .card {
   position: relative;
   overflow: visible;
+  width: 250px;
+}
+
+#upcoming-movies .box-card .card {
+  display: block;
+}
+
+.box-card .card.recomended {
+  width: 250px;
 }
 
 .box-card .card.recomended::after {
@@ -689,6 +698,7 @@ footer > div:nth-child(5) {
 }
 
 .box-card .card h1 {
+  width: 250px;
   font-size: 1.3rem;
   margin: 0.8rem 0;
 }
@@ -699,6 +709,7 @@ footer > div:nth-child(5) {
   justify-content: start;
   flex-direction: row;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .box-card .card .genre {
@@ -789,6 +800,12 @@ footer > div:nth-child(5) {
   background-color: transparent;
   border: 1px solid var(--ligth-color);
   color: var(--ligth-color);
+}
+
+.box-card .card > h2 {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 12px;
 }
 
 /* end cards */
