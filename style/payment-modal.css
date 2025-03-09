@@ -1,102 +1,102 @@
 :root {
-    --primary-color: #1d4ed8;
-    --secondary-color: rgba(29,78,216, 0.2);
-    --slate-color: #eaeaea ;
-    --dark-color: #4E4B66;
-    --ligth-color: #fff;
-    --disabled-color: #A0A3BD;
-    --input-color: #FCFDFE;
-    --love-nest: #FF69B4;
+  --primary-color: #1d4ed8;
+  --secondary-color: rgba(29, 78, 216, 0.2);
+  --slate-color: #eaeaea;
+  --dark-color: #4e4b66;
+  --ligth-color: #fff;
+  --disabled-color: #a0a3bd;
+  --input-color: #fcfdfe;
+  --love-nest: #ff69b4;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: "Mulish", serif;
-    font-weight: 500;
-    background-color: var(--slate-color);
+  font-family: "Mulish", serif;
+  font-weight: 500;
+  background-color: var(--slate-color);
 }
 
 /* header */
 
 header {
-    height: 70px;
-    border-bottom: 1px solid var(--disabled-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: var(--ligth-color);
-    z-index: 9;
+  height: 70px;
+  border-bottom: 1px solid var(--disabled-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--ligth-color);
+  z-index: 9;
 }
 
 header .logo {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 header .account {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 header .account a {
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 header nav ul {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 header nav ul li {
-    list-style: none;
+  list-style: none;
 }
 
 header nav ul li a {
-    text-decoration: none;
-    color: var(--dark-color);
-    transition: al1 100ms ease-in-out;
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: al1 100ms ease-in-out;
 }
 
 header nav ul li a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 header .account button {
-    width: max-content;
-    height: 35px;
-    padding: 3px 10px;
-    border-radius: 5px;
-    border: 0.5px solid var(--primary-color);
-    transition: all 100ms ease-in;
-    cursor: pointer;
+  width: max-content;
+  height: 35px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: 0.5px solid var(--primary-color);
+  transition: all 100ms ease-in;
+  cursor: pointer;
 }
 
 header .account #signin-button {
-    background-color: var(--ligth-color);
-    color: var(--primary-color);
+  background-color: var(--ligth-color);
+  color: var(--primary-color);
 }
 
 header .account #signin-button:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 header .account #signup-button {
-    background-color: var(--primary-color);
-    color: var(--ligth-color);
+  background-color: var(--primary-color);
+  color: var(--ligth-color);
 }
 
 header .account #signup-button:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 header .hamburger {
-    display: none;
+  display: none;
 }
 
 /* end header */
@@ -105,72 +105,72 @@ header .hamburger {
 
 /* section setup */
 main section {
-    margin: 2rem auto;
-    width: 90%;
-    display: flex;
-    justify-content: center;
+  margin: 2rem auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
 }
 /* end section setup */
 
 /* progress */
 
 main .progress {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 2rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 2rem;
 }
 
 main .progress div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 main .progress div .circle {
-    width: 47px;
-    height: 47px;
-    background-color: var(--disabled-color);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--ligth-color);
-    position: relative;
+  width: 47px;
+  height: 47px;
+  background-color: var(--disabled-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--ligth-color);
+  position: relative;
 }
 
 main .progress div .circle.success::after {
-    content: '';
-    width: 47px;
-    height: 47px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 50%;
-    background-image: url('../assets/icons/success.svg');
+  content: "";
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  background-image: url("../assets/icons/success.svg");
 }
 
 main .progress div .circle.active {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 main .progress div.line-dashed {
-    width: 30px;
-    border-top: 1px dashed var(--primary-color);
+  width: 30px;
+  border-top: 1px dashed var(--primary-color);
 }
 
 main .progress div p {
-    color: var(--disabled-color);
+  color: var(--disabled-color);
 }
 
 main .progress div p.active {
-    color: var(--dark-color);
+  color: var(--dark-color);
 }
 
 /* end progress */
@@ -178,450 +178,460 @@ main .progress div p.active {
 /* box container */
 
 main section:nth-child(2) {
-    width: 60%;
-    border-radius: 10px;
-    background-color: var(--ligth-color);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  width: 60%;
+  border-radius: 10px;
+  background-color: var(--ligth-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 main section:nth-child(2) > div,
 main section:nth-child(2) > form > div {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 main section:nth-child(2) > div > h1,
 main section:nth-child(2) > form > div > h1 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 main section:nth-child(2) > form > div:nth-child(2) > h1 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 main section:nth-child(2) .payment-info > div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
 }
 
 main section:nth-child(2) .payment-info > div > p:nth-child(1) {
-    font-size: 0.7rem;
-    color: var(--disabled-color);
+  font-size: 0.7rem;
+  color: var(--disabled-color);
 }
 
 main section:nth-child(2) .payment-info > div > p:nth-child(2) {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 main section:nth-child(2) .payment-info > div:nth-child(6) > p:nth-child(2) {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
 }
 
 main section:nth-child(2) .personal-information > div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 main section:nth-child(2) .personal-information > div > label {
-    color: var(--disabled-color);
-    font-size: 0.9rem;
+  color: var(--disabled-color);
+  font-size: 0.9rem;
 }
 
 main section:nth-child(2) .personal-information > div > input {
-    height: 45px;
-    border-radius: 3px;
-    border: 1px solid var(--disabled-color);
-    padding: 0 1.5rem;
-    font-size: 1rem;
+  height: 45px;
+  border-radius: 3px;
+  border: 1px solid var(--disabled-color);
+  padding: 0 1.5rem;
+  font-size: 1rem;
 }
 
 main section:nth-child(2) .personal-information > div:nth-child(4) > input {
-    padding-left: 6rem;
+  padding-left: 6rem;
 }
 
 main section:nth-child(2) .personal-information > div > input:focus {
-    outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--primary-color);
 }
 
 main section:nth-child(2) .personal-information > div:nth-child(4) {
-    position: relative;
+  position: relative;
 }
 
 main section:nth-child(2) .personal-information > div:nth-child(4)::after {
-    content: '+62';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 35px;
-    transform: translate(20px, 40px);
-    border-right: 2px solid var(--slate-color);
-    line-height: 35px;
-    padding-right: 1.5rem;
+  content: "+62";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 35px;
+  transform: translate(20px, 40px);
+  border-right: 2px solid var(--slate-color);
+  line-height: 35px;
+  padding-right: 1.5rem;
 }
 
 main section:nth-child(2) form button {
-    height: 35px;
-    color: var(--ligth-color);
-    background-color: var(--primary-color);
-    border-radius: 5px;
-    border: 1px solid var(--primary-color);
-    cursor: pointer;
-    margin-top: 2rem;
+  height: 35px;
+  color: var(--ligth-color);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  margin-top: 2rem;
 }
 
 main section:nth-child(2) .payment-methode > div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 main section:nth-child(2) .payment-methode > div > div > label > div {
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    border: 2px solid var(--disabled-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid var(--disabled-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 main section:nth-child(2) .payment-methode > div > div > input {
-    display: none;
+  display: none;
 }
 
-main section:nth-child(2) .payment-methode > div > div > input:checked + label > div {
-    border: 3px solid var(--primary-color);
+main
+  section:nth-child(2)
+  .payment-methode
+  > div
+  > div
+  > input:checked
+  + label
+  > div {
+  border: 3px solid var(--primary-color);
 }
 
 main section:nth-child(2) .payment-methode > div > div > label img {
-    height: 25px;
+  height: 25px;
 }
 
 main section:nth-child(2) form button:hover {
-    filter: brightness(0.9);
+  filter: brightness(0.9);
 }
 
 main section:nth-child(2) form button:active {
-    transform: scale(0.97);
+  transform: scale(0.97);
 }
 
 /* modal */
 
 section#modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(78, 75, 102, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(78, 75, 102, 0.7);
+}
+
+section#modal.hidden {
+  display: none;
 }
 
 section#modal .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 2rem;
-    background-color: var(--ligth-color);
-    width: 40%;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  background-color: var(--ligth-color);
+  width: 40%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
 }
 
 section#modal .container h1 {
-    text-align: center;
+  text-align: center;
 }
 
 section#modal .container > div {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr; 
-    grid-template-areas: 
-    'label norek button'
-    'label2 payment payment';
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "label norek button"
+    "label2 payment payment";
+  gap: 1rem;
 }
 
 section#modal .container > div > div:nth-child(1) {
-    grid-area: label;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  grid-area: label;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 section#modal .container > div > div:nth-child(1) p,
 section#modal .container > div > div:nth-child(4) p {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 section#modal .container > div > h6:nth-child(2) {
-    grid-area: norek;
-    font-size: 0.8rem;
-    justify-self: end;
-    align-self: center;
+  grid-area: norek;
+  font-size: 0.8rem;
+  justify-self: end;
+  align-self: center;
 }
 
 section#modal .container > div > button {
-    grid-area: button;
-    width: 90px;
-    height: 40px;
-    background-color: var(--ligth-color);
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    justify-self: end;
-    align-self: center;
-    cursor: pointer;
-    transition: all 100ms ease-in-out;
+  grid-area: button;
+  width: 90px;
+  height: 40px;
+  background-color: var(--ligth-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  justify-self: end;
+  align-self: center;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
 
 section#modal .container > div > button:hover {
-    background-color: var(--primary-color);
-    color: var(--ligth-color);
+  background-color: var(--primary-color);
+  color: var(--ligth-color);
 }
 
 section#modal .container > div > button:active {
-    transform: scale(0.97);
+  transform: scale(0.97);
 }
 
 section#modal .container > div > div:nth-child(4) {
-    grid-area: label2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  grid-area: label2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 section#modal .container > div > h6:nth-child(5) {
-    grid-area: payment;
-    font-size: 1.5rem;
-    justify-self: end;
-    align-self: center;
-    color: var(--primary-color);
+  grid-area: payment;
+  font-size: 1.5rem;
+  justify-self: end;
+  align-self: center;
+  color: var(--primary-color);
 }
 
 section#modal .container > p > span {
-    color: red;
-    font-weight: 800;
+  color: red;
+  font-weight: 800;
 }
 
-section#modal .container > button {
-    height: 40px;
-    background-color: var(--primary-color);
-    border-radius: 5px;
-    border: 1px solid var(--primary-color);
-    color: var(--ligth-color);
-    cursor: pointer;
-    transition: all 100ms ease-in-out;
+section#modal .container > a > button {
+  width: 100%;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  color: var(--ligth-color);
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
 
 section#modal .container > button:hover {
-    background-color: var(--ligth-color);
-    color: var(--primary-color);
+  background-color: var(--ligth-color);
+  color: var(--primary-color);
 }
 
 section#modal .container > button:active {
-    transform: scale(0.97);
+  transform: scale(0.97);
 }
 
 section#modal .container > a {
-    text-align: center;
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
 /* end modal */
 /* end box container */
-
 
 /* end main */
 
 /* footer */
 
 footer {
-    display: grid;
-    grid-template-areas: 
-    'tagline explore sponsor follow'
-    'copy-rigth copy-rigth copy-rigth copy-rigth';
-    padding: 3rem 0;
-    column-gap: 2rem;
-    background-color: var(--ligth-color);
+  display: grid;
+  grid-template-areas:
+    "tagline explore sponsor follow"
+    "copy-rigth copy-rigth copy-rigth copy-rigth";
+  padding: 3rem 0;
+  column-gap: 2rem;
+  background-color: var(--ligth-color);
 }
 
 footer > div:nth-child(1) {
-    width: 300px;
-    grid-area: tagline;
-    margin-left: 4rem;
+  width: 300px;
+  grid-area: tagline;
+  margin-left: 4rem;
 }
 
 footer > div:nth-child(1) p {
-    color: var(--disabled-color);
+  color: var(--disabled-color);
 }
 
 footer > div:nth-child(2) {
-    grid-area: explore;
+  grid-area: explore;
 }
 
 footer > div:nth-child(3) > div {
-    display: flex;
-    gap: 2rem;
-    flex-direction: column;
-    align-items: start;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: start;
 }
 
 footer > div:nth-child(2) a {
-    display: block;
-    text-decoration: none;
-    color: var(--disabled-color);
-    transition: all 100ms ease-in-out;
-    list-style: none;
-    margin-bottom: 0.5rem;
+  display: block;
+  text-decoration: none;
+  color: var(--disabled-color);
+  transition: all 100ms ease-in-out;
+  list-style: none;
+  margin-bottom: 0.5rem;
 }
 
 footer > div:nth-child(2) a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 footer > div:nth-child(3) {
-    grid-area: sponsor;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    align-items: start;
+  grid-area: sponsor;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: start;
 }
 
 footer > div:nth-child(3) img {
-    height: 1.5rem;
+  height: 1.5rem;
 }
 
 footer > div:nth-child(4) {
-    grid-area: follow;
-    display: flex;
-    flex-direction: column;
-    -ms-flex-direction: column;
+  grid-area: follow;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
 }
 
 footer > div:nth-child(4) > div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 footer > div:nth-child(2) > h6,
 footer > div:nth-child(3) > h6,
 footer > div:nth-child(4) > h6 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 footer > div:nth-child(4) > div > a {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    align-items: center;
-    text-decoration: none;
-    color: var(--disabled-color);
-    transition: all 100ms ease-in-out;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--disabled-color);
+  transition: all 100ms ease-in-out;
 }
 
 footer > div:nth-child(4) > div > a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 footer > div:nth-child(4) img {
-    width: 25px;
+  width: 25px;
 }
 
 footer > div:nth-child(4) p {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 footer > div:nth-child(5) {
-    grid-area: copy-rigth;
-    text-align: center;
-    color: var(--disabled-color);
-    margin-top: 1rem;
-}  
+  grid-area: copy-rigth;
+  text-align: center;
+  color: var(--disabled-color);
+  margin-top: 1rem;
+}
 
 /* end footer */
-
 
 /* responsive lg */
 
 @media screen and (max-width: 1024px) {
-    /* main */
+  /* main */
 
-    section#modal .container {
-        width: 60%;
-    }
+  section#modal .container {
+    width: 60%;
+  }
 
-    /* end main */
-    /* footer */
+  /* end main */
+  /* footer */
 
-    footer {
-        grid-template-areas: 
-        'tagline'
-        'explore'
-        'sponsor'
-        'follow'
-        'copy-rigth';
-        row-gap: 2rem;
-    }
+  footer {
+    grid-template-areas:
+      "tagline"
+      "explore"
+      "sponsor"
+      "follow"
+      "copy-rigth";
+    row-gap: 2rem;
+  }
 
-    footer > div:nth-child(2),
-    footer > div:nth-child(3),
-    footer > div:nth-child(4),
-    footer > div:nth-child(5) {
-        margin-left: 4rem;
-    }
+  footer > div:nth-child(2),
+  footer > div:nth-child(3),
+  footer > div:nth-child(4),
+  footer > div:nth-child(5) {
+    margin-left: 4rem;
+  }
 
-    footer > div:nth-child(5) {
-        text-align: left;
-    }
+  footer > div:nth-child(5) {
+    text-align: left;
+  }
 
-    footer > div:nth-child(2) > ul {
-        display: flex;
-        column-gap: 2rem;
-        row-gap: 1rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0;
-    }
+  footer > div:nth-child(2) > ul {
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 
-    footer > div:nth-child(3) > div {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  footer > div:nth-child(3) > div {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    footer > div:nth-child(4) > div {
-        flex-direction: row;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-    }
+  footer > div:nth-child(4) > div {
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+  }
 
-    footer > div:nth-child(4) p {
-        display: none;
-    }
+  footer > div:nth-child(4) p {
+    display: none;
+  }
 
-    footer > div:nth-child(5) {
-        margin-top: 2rem;
-    }
-    /* end footer */
+  footer > div:nth-child(5) {
+    margin-top: 2rem;
+  }
+  /* end footer */
 }
 
 /* end responsive lg */
@@ -629,88 +639,88 @@ footer > div:nth-child(5) {
 /* responsive md */
 
 @media screen and (max-width: 768px) {
-    /* header */
-    header .hamburger {
-        display: block;
-        width: max-content;
-        height: max-content;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        flex-direction: column;
-        row-gap: 5px;
-        margin-right: 2rem;
-        cursor: pointer;
-    }
+  /* header */
+  header .hamburger {
+    display: block;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
 
-    header .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        border-radius: 10px;
-        background-color: var(--dark-color);
-    }
+  header .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--dark-color);
+  }
 
-    header .hamburger .bar:nth-child(2) {
-        width: 18px;
-    }
+  header .hamburger .bar:nth-child(2) {
+    width: 18px;
+  }
 
-    header .account {
-        display: none;
-    }
+  header .account {
+    display: none;
+  }
 
-    header nav {
-        display: none;
-    }
+  header nav {
+    display: none;
+  }
 
-    /* end header */
+  /* end header */
 
-    /* main */
+  /* main */
 
-    main section:nth-child(2) {
-        width: 90%;
-    }
+  main section:nth-child(2) {
+    width: 90%;
+  }
 
-    main .progress {
-        display: none;
-    }
+  main .progress {
+    display: none;
+  }
 
-    main section:nth-child(2) form button {
-        height: 60px;
-    }
+  main section:nth-child(2) form button {
+    height: 60px;
+  }
 
-    section#modal .container {
-        width: 80%;
-    }
+  section#modal .container {
+    width: 80%;
+  }
 
-    section#modal .container > div {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr); 
-        grid-template-areas: 
-        'label label '
-        'norek button'
-        'label2 label2'
-        'payment payment';
-    }
+  section#modal .container > div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "label label "
+      "norek button"
+      "label2 label2"
+      "payment payment";
+  }
 
-    section#modal .container > div > h6:nth-child(2) {
-        justify-self: start;
-    }
+  section#modal .container > div > h6:nth-child(2) {
+    justify-self: start;
+  }
 
-    section#modal .container > div > div:nth-child(1) {
-        column-gap: 3rem;
-        justify-self: start;
-    }
+  section#modal .container > div > div:nth-child(1) {
+    column-gap: 3rem;
+    justify-self: start;
+  }
 
-    section#modal .container > div > div:nth-child(4) {
-        column-gap: 5rem;
-        justify-self: start;
-    }
+  section#modal .container > div > div:nth-child(4) {
+    column-gap: 5rem;
+    justify-self: start;
+  }
 
-    section#modal .container > div > h6:nth-child(5) {
-        justify-self: start;
-    }
+  section#modal .container > div > h6:nth-child(5) {
+    justify-self: start;
+  }
 
-    /* end main */
-}    
+  /* end main */
+}
 /* end responsive md */
