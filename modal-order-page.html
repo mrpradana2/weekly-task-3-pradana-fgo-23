@@ -1,377 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modal Order Page - Tickitz</title>
-    <link rel="stylesheet" href="./style/modal-order-page.css">
+    <link rel="stylesheet" href="./style/template.css" />
+    <link rel="stylesheet" href="./style/modal-order-page.css" />
     <!-- icon -->
-    <link rel="shortcut icon" href="./assets/img/logo/logo-Tickitz.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo/logo-Tickitz.svg"
+      type="image/x-icon"
+    />
     <!-- font import -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- header -->
     <header>
-        <div class="logo">
-            <img src="./assets/img/logo/logo-Tickitz.svg" alt="logo-tickitz">
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./index2.html">Movie</a>
-                </li>
-                <li>
-                    <a href="./order-page.html">Buy Ticket</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="account">
-            <a href="./log-in.html">
-                <button type="button" id="signin-button">SignIn</button>
-            </a>
-            <a href="./sign-up.html">
-                <button type="button" id="signup-button">Sign Up</button>
-            </a>
-        </div>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+      <div class="logo">
+        <img src="./assets/img/logo/logo-Tickitz.svg" alt="logo-tickitz" />
+      </div>
+      <nav class="">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./index2.html">Movie</a>
+          </li>
+          <li>
+            <a href="./modal-order-page.html" class="active">Buy Ticket</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="account">
+        <a href="./log-in.html">
+          <button type="button" id="signin-button">SignIn</button>
+        </a>
+        <a href="./sign-up.html">
+          <button type="button" id="signup-button">Sign Up</button>
+        </a>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </header>
     <!-- end header -->
 
     <main>
-        <!-- progress -->
-        <section>
-            <div class="progress">
-                <div>
-                    <div class="circle success">1</div>
-                    <p class="active">Fill Form</p>
-                </div>
-                <div class="line-dashed"></div>
-                <div>
-                    <div class="circle active">2</div>
-                    <p class="active">Activate</p>
-                </div>
-                <div class="line-dashed"></div>
-                <div>
-                    <div class="circle">3</div>
-                    <p>Done</p>
-                </div>
+      <!-- progress -->
+      <section>
+        <div class="progress">
+          <div>
+            <div class="circle success">1</div>
+            <p class="active">Fill Form</p>
+          </div>
+          <div class="line-dashed"></div>
+          <div>
+            <div class="circle active">2</div>
+            <p class="active">Activate</p>
+          </div>
+          <div class="line-dashed"></div>
+          <div>
+            <div class="circle">3</div>
+            <p>Done</p>
+          </div>
+        </div>
+      </section>
+      <!-- end progress -->
+      <!-- content -->
+      <section>
+        <div id="choose-seat">
+          <div class="movie-info">
+            <div class="thumbnail"></div>
+            <h1 class="title">Spider-Man: Homecoming</h1>
+            <div class="genre">
+              <div>Action</div>
+              <div>Adventure</div>
             </div>
-        </section>
-        <!-- end progress -->
-         <!-- content -->
-        <section>
-            <div id="choose-seat">
-                <div class="movie-info">
-                    <div class="thumbnail"></div>
-                    <h1 class="title">
-                        Spider-Man: Homecoming
-                    </h1>
-                    <div class="genre">
-                        <div>
-                            Action
-                        </div>
-                        <div>
-                            Adventure
-                        </div>
-                    </div>
-                    <p class="time">
-                        Regular - 13:00 PM
-                    </p>
-                    <button type="button">Change</button>
+            <p class="time">Regular - 13:00 PM</p>
+            <button type="button">Change</button>
+          </div>
+          <div class="choose">
+            <h1>Choose Your Seat</h1>
+            <div class="chair">
+              <p>Screen</p>
+              <div class="group1">
+                <div>
+                  <div>A</div>
+                  <div>B</div>
+                  <div>C</div>
+                  <div>D</div>
+                  <div>E</div>
+                  <div>F</div>
+                  <div>G</div>
                 </div>
-                <div class="choose">
-                    <h1>Choose Your Seat</h1>
-                    <div class="chair">
-                        <p>Screen</p>
-                        <div class="group1">
-                            <div>
-                                <div>A</div>
-                                <div>B</div>
-                                <div>C</div>
-                                <div>D</div>
-                                <div>E</div>
-                                <div>F</div>
-                                <div>G</div>
-                            </div>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="sold"></div>
-                                <div></div>
-                                <div class="sold"></div>
-                                <div class="sold"></div>
-                                <div class="sold"></div>
-                                <div></div>
-                                <div class="selected"></div>
-                                <div></div>
-                                <div class="selected"></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="selected"></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="sold"></div>
-                                <div></div>
-                                <div></div>
-                                <div class="sold"></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div>
-                                <div>1</div>
-                                <div>2</div>
-                                <div>3</div>
-                                <div>4</div>
-                                <div>5</div>
-                                <div>6</div>
-                                <div>7</div>
-                            </div>
-                        </div>
-                        <div class="group2">
-                            <div>
-                                <div></div>
-                            </div>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="sold"></div>
-                                <div></div>
-                                <div></div>
-                                <div class="sold"></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="sold"></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="love-nest"></div>
-                                <div class="love-nest"></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div>
-                                <div>8</div>
-                                <div>9</div>
-                                <div>10</div>
-                                <div>11</div>
-                                <div>12</div>
-                                <div>13</div>
-                                <div>14</div>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div class="sold"></div>
+                  <div></div>
+                  <div class="sold"></div>
+                  <div class="sold"></div>
+                  <div class="sold"></div>
+                  <div></div>
+                  <div class="selected"></div>
+                  <div></div>
+                  <div class="selected"></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div class="selected"></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div class="sold"></div>
+                  <div></div>
+                  <div></div>
+                  <div class="sold"></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
-                <div class="seating-key">
-                    <h1>Seating Key</h1>
-                    <div class="dropdown">
-                        <div>
-                            <img src="./assets/icons/Forward Arrow.svg" alt="icon">
-                            <p>A - G</p>
-                        </div>
-                        <div>
-                            <img src="./assets/icons/Forward Arrow.svg" alt="icon">
-                            <p>1 - 14</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="status available"></div>
-                            <p>Available</p>
-                        </div>
-                        <div>
-                            <div class="status selected"></div>
-                            <p>Selected</p>
-                        </div>
-                        <div>
-                            <div class="status love-nest"></div>
-                            <p>Love nest</p>
-                        </div>
-                        <div>
-                            <div class="status sold"></div>
-                            <p>sold</p>
-                        </div>
-                    </div>
+                <div>
+                  <div>1</div>
+                  <div>2</div>
+                  <div>3</div>
+                  <div>4</div>
+                  <div>5</div>
+                  <div>6</div>
+                  <div>7</div>
                 </div>
+              </div>
+              <div class="group2">
+                <div>
+                  <div></div>
+                </div>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div class="sold"></div>
+                  <div></div>
+                  <div></div>
+                  <div class="sold"></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div class="sold"></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div class="love-nest"></div>
+                  <div class="love-nest"></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div>
+                  <div>8</div>
+                  <div>9</div>
+                  <div>10</div>
+                  <div>11</div>
+                  <div>12</div>
+                  <div>13</div>
+                  <div>14</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="seating-key">
+            <h1>Seating Key</h1>
+            <div class="dropdown">
+              <div>
+                <img src="./assets/icons/Forward Arrow.svg" alt="icon" />
+                <p>A - G</p>
+              </div>
+              <div>
+                <img src="./assets/icons/Forward Arrow.svg" alt="icon" />
+                <p>1 - 14</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="status available"></div>
+                <p>Available</p>
+              </div>
+              <div>
+                <div class="status selected"></div>
+                <p>Selected</p>
+              </div>
+              <div>
+                <div class="status love-nest"></div>
+                <p>Love nest</p>
+              </div>
+              <div>
+                <div class="status sold"></div>
+                <p>sold</p>
+              </div>
+            </div>
+          </div>
 
-                <div class="choosed-chair">
-                    <div>
-                        <p>Choosed</p>
-                        <p>C4</p>
-                    </div>
-                    <div>
-                        <div>
-                            <p>C</p>
-                            <img src="./assets/icons/Forward.svg" alt="icon">
-                        </div>
-                        <div>
-                            <p>4</p>
-                            <img src="./assets/icons/Forward.svg" alt="icon">
-                        </div>
-                    </div>
-                    <button type="button">
-                        Add new seat
-                    </button>
-                </div>
+          <div class="choosed-chair">
+            <div>
+              <p>Choosed</p>
+              <p>C4</p>
             </div>
-            <div id="total-payment">
-                <div>
-                    <img src="./assets/img/logo-sponsor/CineOne21 2.svg" alt="logo">
-                    <h1>CineOne21 Cinema</h1>
-                    <div class="details">
-                        <div>
-                            <p>Movie selected</p>
-                            <p>Spider-Man: Homecoming</p>
-                        </div>
-                        <div>
-                            <p>Tuesday, 07 July 2020</p>
-                            <p>13:00pm</p>
-                        </div>
-                        <div>
-                            <p>One ticket price</p>
-                            <p>$10</p>
-                        </div>
-                        <div>
-                            <p>Seat choosed</p>
-                            <p>C4, C5, C6</p>
-                        </div>
-                    </div>
-                    <div class="payment">
-                        <p>Total Payment</p>
-                        <h2>$30</h2>
-                    </div>
-                </div>
-                <div>
-                    <button type="button">Checkout now</button>
-                </div>
+            <div>
+              <div>
+                <p>C</p>
+                <img src="./assets/icons/Forward.svg" alt="icon" />
+              </div>
+              <div>
+                <p>4</p>
+                <img src="./assets/icons/Forward.svg" alt="icon" />
+              </div>
             </div>
-        </section>
-         <!-- end content -->
+            <button type="button">Add new seat</button>
+          </div>
+        </div>
+        <div id="total-payment" class="hidden">
+          <div>
+            <img src="./assets/img/logo-sponsor/CineOne21 2.svg" alt="logo" />
+            <h1>CineOne21 Cinema</h1>
+            <div class="details">
+              <div>
+                <p>Movie selected</p>
+                <p>Spider-Man: Homecoming</p>
+              </div>
+              <div>
+                <p>Tuesday, 07 July 2020</p>
+                <p>13:00pm</p>
+              </div>
+              <div>
+                <p>One ticket price</p>
+                <p>$10</p>
+              </div>
+              <div>
+                <p>Seat choosed</p>
+                <p>C4, C5, C6</p>
+              </div>
+            </div>
+            <div class="payment">
+              <p>Total Payment</p>
+              <h2>$30</h2>
+            </div>
+          </div>
+          <div>
+            <a href="./payment-modal.html">
+              <button type="button">Checkout now</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- end content -->
     </main>
 
     <footer>
+      <div>
+        <img src="./assets/img/logo/logo-Tickitz.svg" alt="logo" />
+        <p>
+          Stop waiting in line. Buy tickets conveniently, watch movies quietly.
+        </p>
+      </div>
+      <div>
+        <h6>Explore</h6>
+        <ul>
+          <a href="#">
+            <li>Cinemas</li>
+          </a>
+          <a href="./index2.html">
+            <li>Movies List</li>
+          </a>
+          <a href="./ticket-result.html">
+            <li>My Ticket</li>
+          </a>
+          <a href="#">
+            <li>Notification</li>
+          </a>
+        </ul>
+      </div>
+      <div>
+        <h6>Our Sponsor</h6>
         <div>
-            <img src="./assets/img/logo/logo-Tickitz.svg" alt="logo">
-            <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+          <img
+            src="./assets/img/logo-sponsor/ebv.id 2.svg"
+            alt="logo-sponsor"
+          />
+          <img
+            src="./assets/img/logo-sponsor/CineOne21 2.svg"
+            alt="logo-sponsor"
+          />
+          <img
+            src="./assets/img/logo-sponsor/hiflix 2.svg"
+            alt="logo-sponsor"
+          />
         </div>
+      </div>
+      <div>
+        <h6>Follow us</h6>
         <div>
-            <h6>Explore</h6>
-            <ul>
-                <a href="#">
-                    <li>Cinemas</li>
-                </a>
-                <a href="./index2.html">
-                    <li>Movies List</li>
-                </a>
-                <a href="./ticket-result.html">
-                    <li>My Ticket</li>
-                </a>
-                <a href="#">
-                    <li>Notification</li>
-                </a>
-            </ul>
+          <a href="#">
+            <img
+              src="./assets/icons/social-media/eva_facebook-outline.svg"
+              alt="social-media"
+            />
+            <p>Tickitz Cinema id</p>
+          </a>
+          <a href="#">
+            <img
+              src="./assets/icons/social-media/bx_bxl-instagram.svg"
+              alt="social-media"
+            />
+            <p>tickitz.id</p>
+          </a>
+          <a href="#">
+            <img
+              src="./assets/icons/social-media/eva_twitter-outline.svg"
+              alt="social-media"
+            />
+            <p>tickitz.id</p>
+          </a>
+          <a href="#">
+            <img
+              src="./assets/icons/social-media/feather_youtube.svg"
+              alt="social-media"
+            />
+            <p>Tickitz Cinema id</p>
+          </a>
         </div>
-        <div>
-            <h6>Our Sponsor</h6>
-            <div>
-                <img src="./assets/img/logo-sponsor/ebv.id 2.svg" alt="logo-sponsor">
-                <img src="./assets/img/logo-sponsor/CineOne21 2.svg" alt="logo-sponsor">
-                <img src="./assets/img/logo-sponsor/hiflix 2.svg" alt="logo-sponsor">
-            </div>
-        </div>
-        <div>
-            <h6>Follow us</h6>
-            <div>
-                <a href="#">
-                    <img src="./assets/icons/social-media/eva_facebook-outline.svg" alt="social-media">
-                    <p>Tickitz Cinema id</p>
-                </a>
-                <a href="#">
-                    <img src="./assets/icons/social-media/bx_bxl-instagram.svg" alt="social-media">
-                    <p>tickitz.id</p>
-                </a>
-                <a href="#">
-                    <img src="./assets/icons/social-media/eva_twitter-outline.svg" alt="social-media">
-                    <p>tickitz.id</p>
-                </a>
-                <a href="#">
-                    <img src="./assets/icons/social-media/feather_youtube.svg" alt="social-media">
-                    <p>Tickitz Cinema id</p>
-                </a>
-            </div>
-        </div>
-        <div>&copy; 2020 Tickitz. All Rights Reserved</div>
+      </div>
+      <div>&copy; 2020 Tickitz. All Rights Reserved</div>
     </footer>
-
-</body>
+    <script src="./script/order-page.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
